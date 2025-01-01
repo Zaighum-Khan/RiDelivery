@@ -26,13 +26,13 @@ namespace RiDelivery
                     string phoneNumber = RegistrationCheckers.numberChecker();
 
                     Console.Write("Please enter Your Address : ");
-                    string address = Console.ReadLine();
+                    string address = Console.ReadLine() ?? "";
 
                     Console.WriteLine("\nVehicle Info : ");
                     vehicleType = RegistrationCheckers.vehicleTypeChecker();
 
                     Console.Write("Please Enter Vehicle Number : ");
-                    string vehicleNumber = Console.ReadLine();
+                    string vehicleNumber = Console.ReadLine() ?? "";
 
                     Console.Write("\nCreate Password :");
                     string password = RegistrationCheckers.passwordChecker();
@@ -41,7 +41,9 @@ namespace RiDelivery
                     {
                         sw.WriteLine($"{email},{password},{phoneNumber},{address},{vehicleType},{vehicleNumber}");
                     }
-                    Console.WriteLine("\nYou are Registered Successfully !!");
+                    Console.WriteLine("\nYou are Registered Successfully !! Now login to continue.");
+                    Thread.Sleep(1500);
+                    Menu.LoginMenu();
                     break;
                 }
                 else
@@ -62,6 +64,9 @@ namespace RiDelivery
                 if (File.Exists(filepath))
                 {
                     LoginCheckers.passLoginChecker(filepath);
+                    Console.WriteLine("\nYou are Logged in Successfully !!");
+                    Thread.Sleep(1500);
+                    RiderInterface.riderInterface();
                     break;
                 }
                 else
@@ -71,32 +76,5 @@ namespace RiDelivery
             }
         }
 
-        // private List<Riders> riders = new List<Riders>(); 
-
-        // public void Rider()
-        // {
-
-        //     var rider = new Riders();
-        //     Console.WriteLine("Enter Name: ");
-        //     rider.Name = Console.ReadLine();
-
-        //     Console.WriteLine("Enter Vehicle Type (1 for Bike , 2 for Car): ");
-        //     rider.Vehicle = Console.ReadLine();
-
-        //     Console.WriteLine("Enter License Number: ");
-        //     rider.License = Console.ReadLine();
-
-        //     Console.WriteLine("Enter Vehicle Plate Number: ");
-        //     rider.NumPlate = Console.ReadLine();
-
-        //     Console.WriteLine("Enter Contact (Phone Number): ");
-        //     rider.Contact = Console.ReadLine();
-
-        //     Console.WriteLine("Enter Address: ");
-        //     rider.Address = Console.ReadLine();
-                
-        //     riders.Add(rider);
-
-        // }
     }
 }

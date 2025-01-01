@@ -12,3 +12,4 @@
 /Users/m.zaighumkhan/Desktop/RiDelivery/RiDelivery/obj/Debug/net8.0/RiDelivery.pdb
 /Users/m.zaighumkhan/Desktop/RiDelivery/RiDelivery/obj/Debug/net8.0/RiDelivery.genruntimeconfig.cache
 /Users/m.zaighumkhan/Desktop/RiDelivery/RiDelivery/obj/Debug/net8.0/ref/RiDelivery.dll
+/Users/m.zaighumkhan/Desktop/RiDelivery/RiDelivery/obj/Debug/net8.0/RiDelivery.sourcelink.json

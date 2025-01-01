@@ -10,7 +10,7 @@ namespace RiDelivery
         public static string userNameChecker()
         {
             Console.Write("\nPlease Enter Your User Name : ");
-            string user = Console.ReadLine();
+            string user = Console.ReadLine() ?? "";
             if (user.Length < 3)
             {
                 Console.WriteLine("User Name must contain atleast 3 characters.");
@@ -19,10 +19,22 @@ namespace RiDelivery
             return user;
         }
 
+        public static string restaurantNameChecker()
+        {
+            Console.Write("\nPlease Enter Your Restaurant's Name : ");
+            string user = Console.ReadLine() ?? "";
+            if (user.Length < 3)
+            {
+                Console.WriteLine("Restaurant's Name must contain atleast 3 characters.");
+                userNameChecker();
+            }
+            return user;
+        }
+
         public static string emailChecker()
         { 
                 Console.Write("Please Enter Your E-mail : ");
-                string mail = Console.ReadLine();
+                string mail = Console.ReadLine() ?? "";
                 if (!mail.Contains("@") && !mail.Contains(".com"))
                 {
                     Console.WriteLine("Invalid Email Address! Email must contain '@' and '.com'");
@@ -34,7 +46,7 @@ namespace RiDelivery
         public static string passwordChecker()
         {
             Console.Write("Enter Password : ");
-            string pass = Console.ReadLine();
+            string pass = Console.ReadLine() ?? "";
             if (pass.Length < 8)
             {
                 Console.WriteLine("Password Should contains atleast 8 characters!! \nPlease Try again.");
@@ -43,7 +55,7 @@ namespace RiDelivery
             else
             {
             Console.Write("Confirm Password : ");
-            string passConfirm = Console.ReadLine();
+            string passConfirm = Console.ReadLine() ?? "";
             if (pass != passConfirm)
             {
                 Console.Clear();
@@ -54,7 +66,7 @@ namespace RiDelivery
             return pass;
         }
 
-        private static bool IsDigitsOnly(string str)
+        public static bool IsDigitsOnly(string str)
         {
             foreach (char c in str)
             {
@@ -66,13 +78,14 @@ namespace RiDelivery
         public static string numberChecker()
         {
             Console.Write("\nPlease enter your Contact Number : ");
-            string number = Console.ReadLine();
+            string number = Console.ReadLine() ?? "";
             
-            if (number.Length != 11 && !IsDigitsOnly(number))
+            if (number.Length != 11 || !IsDigitsOnly(number))
             {
-                Console.WriteLine("Contact should be a number of 11 digits.\nTry Again !!");
+                Console.WriteLine("Contact should only contain Numbers and length of 11 digits.\nTry Again !!");
                 numberChecker();
             }
+
             return number;
         }
 

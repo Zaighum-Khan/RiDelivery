@@ -16,7 +16,12 @@ namespace RiDelivery
                 Console.WriteLine("Personal Info :");
                 string userName = RegistrationCheckers.userNameChecker();
 
-                string fName = userName + ".txt";
+                if(!Directory.Exists("Providers/Riders"))
+                {
+                    Directory.CreateDirectory("Providers/Riders");
+                }
+
+                string fName = $"Providers/Riders/{userName}.txt";
                 string filepath = $"{fName}";
 
                 if (!File.Exists(filepath))
@@ -60,12 +65,10 @@ namespace RiDelivery
             {
                 Console.Write("\nPlease Enter User Name : ");
                 string fName = Console.ReadLine() + ".txt";
-                string filepath = $"{fName}";
+                string filepath = $"Providers/Riders/{fName}";
                 if (File.Exists(filepath))
                 {
                     LoginCheckers.passLoginChecker(filepath);
-                    Console.WriteLine("\nYou are Logged in Successfully !!");
-                    Thread.Sleep(1500);
                     RiderInterface.riderInterface();
                     break;
                 }

@@ -1,0 +1,6 @@
+Order Date: 2/1/2025 2:05:27 ق.د.
+Restaurant: Shahi
+Items Ordered:
+Item Name: Burger, Quantity: 4, Price: Rs250
+Total Bill: Rs1,000
+--------------------------------------------------

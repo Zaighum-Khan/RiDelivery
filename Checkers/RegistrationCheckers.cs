@@ -96,7 +96,7 @@ namespace RiDelivery
             if ((type != "BIKE") && (type != "CAR"))
             {
                 Console.WriteLine("Invalid Vehicle Type!!\nPlease Try Again.");
-                vehicleTypeChecker();
+                return vehicleTypeChecker();
             }
             return type;
         }

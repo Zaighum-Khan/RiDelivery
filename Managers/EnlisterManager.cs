@@ -14,11 +14,11 @@ namespace RiDelivery
                 string userName = RegistrationCheckers.userNameChecker();
                 string restaurantName = RegistrationCheckers.restaurantNameChecker();
                 string fName = restaurantName + ".txt";
-                if(!Directory.Exists("Providers/Owners"))
+                if(!Directory.Exists("Providers/ROwners"))
                 {
-                    Directory.CreateDirectory("Providers/Owners");
+                    Directory.CreateDirectory("Providers/ROwners");
                 }
-                string filepath = $"Providers/Owners/{fName}";
+                string filepath = $"Providers/ROwners/{fName}";
                 if (!File.Exists(filepath))
                 {
                     string email = RegistrationCheckers.emailChecker();
@@ -29,7 +29,7 @@ namespace RiDelivery
                     // we need to make a separate directory for restaurant names.
                     menuWriter($"Providers/Restaurants/{fName}");
 
-                    Console.Write("\nCreate Password :");
+                    Console.WriteLine("\nCreate Password :");
                     string password = RegistrationCheckers.passwordChecker();
 
 
@@ -37,8 +37,9 @@ namespace RiDelivery
                     {
                         sw.WriteLine($"{email},{password},{userName},{phoneNumber},{address},{restaurantName}");
                     }
-                    Console.WriteLine("\nYou are Registered Successfully !!");
-                    EnlisterInterface.enlisterInterface();
+                    Console.WriteLine("\nYou are Registered Successfully !! Now Login to Continue.");
+                    Thread.Sleep(1500);
+                    Menu.LoginMenu();
                     break;
                 }
                 else
@@ -55,7 +56,7 @@ namespace RiDelivery
             {
                 Console.Write("\nPlease Enter Restaurant Name : ");
                 string fName = Console.ReadLine() + ".txt";
-                string filepath = $"Providers/Owners/{fName}";
+                string filepath = $"Providers/ROwners/{fName}";
                 if (File.Exists(filepath))
                 {
                     LoginCheckers.passLoginChecker(filepath);
@@ -123,12 +124,14 @@ namespace RiDelivery
                 {
                     Console.WriteLine("Personal Info :");
                     string userName = RegistrationCheckers.userNameChecker();
-                    string fName = userName + ".txt";
-                    if (!Directory.Exists("Providers/Shops"))
+                    Console.Write("Enter Your Shop Name : ");
+                    string shopName = Console.ReadLine() ?? "";
+                    string fName = shopName + ".txt";
+                    if (!Directory.Exists("Providers/SOwners"))
                     {
-                        Directory.CreateDirectory("Providers/Shops");
+                        Directory.CreateDirectory("Providers/SOwners");
                     }
-                    string filepath = $"Providers/Shops/{fName}";
+                    string filepath = $"Providers/SOwners/{fName}";
                     if (!File.Exists(filepath))
                     {
                         string email = RegistrationCheckers.emailChecker();
@@ -136,12 +139,8 @@ namespace RiDelivery
                         Console.Write("Please enter Your Address : ");
                         string address = Console.ReadLine() ?? "";
 
-                        Console.Write("Enter Your Shop Name : ");
-                        string shopName = Console.ReadLine() ?? "";
 
-                        // we need to make a separate directory for shop names.
-                        string provider = shopName + ".txt";
-                        //shop writer
+                        groceryWriter($"Providers/Shops/{fName}");
 
                         Console.Write("\nCreate Password :");
                         string password = RegistrationCheckers.passwordChecker();
@@ -163,14 +162,12 @@ namespace RiDelivery
                 Console.Clear();
                 while (true)
                 {
-                    Console.Write("\nPlease Enter User Name : ");
+                    Console.Write("\nPlease Enter Shop Name : ");
                     string fName = Console.ReadLine() + ".txt";
-                    string filepath = $"Providers/Shops/{fName}";
+                    string filepath = $"Providers/SOwners/{fName}";
                     if (File.Exists(filepath))
                     {
                         LoginCheckers.passLoginChecker(filepath);
-                        Console.WriteLine("\nYou are Logged in Successfully !!");
-                        Thread.Sleep(1500);
                         EnlisterInterface.enlisterInterface();
                         break;
                     }
@@ -180,6 +177,50 @@ namespace RiDelivery
                     }
                 }
             }
+
+            public static void groceryWriter(string fname)
+        {
+            char ans;
+            Console.WriteLine("\nAvailable Food items : ");
+            using (StreamWriter sw = new StreamWriter(fname, true))
+            {
+                do
+                {
+                    Console.Write("\nEnter the Item Name : ");
+                    string itemName = Console.ReadLine();
+                    
+                    while (true)
+                    {
+                        Console.Write("Enter Item Price : ");
+                        string price = Console.ReadLine();
+                        if (RegistrationCheckers.IsDigitsOnly(price))
+                        {
+                            sw.WriteLine($"{itemName},{price}");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Price should be in digits only!!\n");
+                        }
+                    }
+
+                    while (true)
+                    {
+                        Console.Write("\nAre there any more items ? (y/n) : ");
+                        ans = Convert.ToChar(Console.ReadLine().ToLower());
+                        if (ans == 'y' || ans == 'n')
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Please enter 'Y' or 'N' only !");
+                        }
+                    }
+                }
+                while (ans == 'y');
+            }
+        }
         }
 
     }

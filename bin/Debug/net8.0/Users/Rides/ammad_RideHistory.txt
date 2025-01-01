@@ -1,0 +1,35 @@
+Ride Date: 2/1/2025 3:02:58 ق.د.
+Rider's Name: Rafey
+Pick-Up Location: karsaz
+Drop-Off Location: dalmia
+Distance: 13 km
+Total Fare: Rs130
+--------------------------------------------------
+Ride Date: 2/1/2025 3:06:15 ق.د.
+Rider's Name: Rafey
+Pick-Up Location: karsaz
+Drop-Off Location: munawar
+Distance: 13 km
+Total Fare: Rs260
+--------------------------------------------------
+Ride Date: 2/1/2025 3:08:06 ق.د.
+Rider's Name: Rafey
+Pick-Up Location: karsaz
+Drop-Off Location: munawar
+Distance: 13 km
+Total Fare: Rs260
+--------------------------------------------------
+Ride Date: 2/1/2025 3:10:53 ق.د.
+Rider's Name: Rafey
+Pick-Up Location: karsaz
+Drop-Off Location: dalmia
+Distance: 10 km
+Total Fare: Rs100
+--------------------------------------------------
+Ride Date: 2/1/2025 3:11:22 ق.د.
+Rider's Name: Zaighi
+Pick-Up Location: karsaz
+Drop-Off Location: kamran
+Distance: 10 km
+Total Fare: Rs200
+--------------------------------------------------

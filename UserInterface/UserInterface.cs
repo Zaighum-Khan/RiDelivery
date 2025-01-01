@@ -7,7 +7,7 @@ namespace RiDelivery
 {
     public class UserInterface
     {
-        public static void userInterface()
+        public static void userInterface(string uName)
         {
 
         
@@ -19,10 +19,10 @@ namespace RiDelivery
             switch (choice)
             {
             case "1":
-                UserRideInterface.RideInterface();
+                UserRideInterface.RideInterface(uName);
                 break;
             case "2":
-                UserOrderInterface.OrderInterface();
+                UserOrderInterface.OrderInterface(uName);
                 break;
             case "3": 
                 Console.WriteLine("Exiting the program. Goodbye!");
@@ -36,5 +36,7 @@ namespace RiDelivery
 
             }
         }
+
+        
     }
 }

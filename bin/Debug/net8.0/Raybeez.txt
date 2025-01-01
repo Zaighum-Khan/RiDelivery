@@ -1,4 +1,0 @@
-Spaghetti,400
-Pasta,450
-Macaroni,450
-Coke,150

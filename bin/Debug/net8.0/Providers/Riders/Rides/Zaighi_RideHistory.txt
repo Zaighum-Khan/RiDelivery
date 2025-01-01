@@ -1,0 +1,7 @@
+Ride Date: 2/1/2025 3:11:23 ق.د.
+Customer's Name: ammad
+Pick-Up Location: karsaz
+Drop-Off Location: kamran
+Distance: 10 km
+Total Fare: Rs200
+--------------------------------------------------

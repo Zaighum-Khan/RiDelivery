@@ -11,12 +11,11 @@ namespace RiDelivery
                 Console.Write("\nPlease Enter User Name : ");
                 string fName = Console.ReadLine() + ".txt";
                 string filepath = $"Users/{fName}";
+                string uName = Path.GetFileNameWithoutExtension(fName);
                 if (File.Exists(filepath))
                 {
                     LoginCheckers.passLoginChecker(filepath);
-                    Console.WriteLine("\nYou are Logged in Successfully !!");
-                    Thread.Sleep(1500);
-                    UserInterface.userInterface();
+                    UserInterface.userInterface(uName);
 
                     break;
                 }

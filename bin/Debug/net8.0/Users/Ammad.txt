@@ -1,7 +1,0 @@
-ammad@gmail.com,booolean,03163521594
-Order Date: 2/1/2025 1:59:45 ق.د.
-Restaurant: Shahi
-Items Ordered:
-Item Name: burger, Quantity: 4, Price: Rs250
-Total Bill: Rs1,000
---------------------------------------------------

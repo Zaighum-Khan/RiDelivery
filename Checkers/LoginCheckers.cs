@@ -27,6 +27,7 @@ namespace RiDelivery
                             else{
                                 Console.WriteLine("Password Incorrect !!\nPlease Try Again");
                                 passLoginChecker(filePath);
+                                break;
                             }
                         }
         }

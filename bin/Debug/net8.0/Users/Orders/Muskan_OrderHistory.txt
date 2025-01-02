@@ -1,0 +1,8 @@
+Order Date: 2/1/2025 5:31:59 ب.د.
+Customer's Name: Muskan
+Restaurant: Shahi
+Items Ordered:
+Item Name: Burger, Quantity: 3, Price: Rs250
+Item Name: Coke, Quantity: 2, Price: Rs150
+Total Bill: Rs1,050
+--------------------------------------------------

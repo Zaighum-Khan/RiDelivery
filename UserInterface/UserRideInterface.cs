@@ -53,7 +53,6 @@ namespace RiDelivery
                 Console.Write("Enter Distance (in km): ");
                 double distance = double.Parse(Console.ReadLine() ?? "0");
                 double ratePerKm = 0;
-                Console.WriteLine(vehicleType);
                 if(vehicleType.Equals("Bike" , StringComparison.OrdinalIgnoreCase))
                 {
                     ratePerKm = 10.0;

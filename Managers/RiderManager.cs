@@ -64,12 +64,12 @@ namespace RiDelivery
             while (true)
             {
                 Console.Write("\nPlease Enter User Name : ");
-                string fName = Console.ReadLine() + ".txt";
-                string filepath = $"Providers/Riders/{fName}";
+                string fName = Console.ReadLine();
+                string filepath = $"Providers/Riders/{fName}.txt";
                 if (File.Exists(filepath))
                 {
                     LoginCheckers.passLoginChecker(filepath);
-                    RiderInterface.riderInterface();
+                    RiderInterface.riderInterface(fName);
                     break;
                 }
                 else

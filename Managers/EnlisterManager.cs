@@ -55,12 +55,12 @@ namespace RiDelivery
             while (true)
             {
                 Console.Write("\nPlease Enter Restaurant Name : ");
-                string fName = Console.ReadLine() + ".txt";
-                string filepath = $"Providers/ROwners/{fName}";
+                string fName = Console.ReadLine();
+                string filepath = $"Providers/ROwners/{fName}.txt";
                 if (File.Exists(filepath))
                 {
                     LoginCheckers.passLoginChecker(filepath);
-                    EnlisterInterface.enlisterInterface();
+                    EnlisterInterface.ROwnerInterface(fName);
                     break;
                 }
                 else
@@ -146,7 +146,7 @@ namespace RiDelivery
                         string password = RegistrationCheckers.passwordChecker();
                         using (StreamWriter sw = new StreamWriter(filepath, true))
                     {
-                        sw.WriteLine($"{email},{password},{phoneNumber},{address},{shopName}");
+                        sw.WriteLine($"{email},{password},{userName},{phoneNumber},{address},{shopName}");
                     }
                     Console.WriteLine("\nYou are Registered Successfully !! Now Login to Continue.");
                     Thread.Sleep(1500);
@@ -163,12 +163,12 @@ namespace RiDelivery
                 while (true)
                 {
                     Console.Write("\nPlease Enter Shop Name : ");
-                    string fName = Console.ReadLine() + ".txt";
-                    string filepath = $"Providers/SOwners/{fName}";
+                    string fName = Console.ReadLine();
+                    string filepath = $"Providers/SOwners/{fName}.txt";
                     if (File.Exists(filepath))
                     {
                         LoginCheckers.passLoginChecker(filepath);
-                        EnlisterInterface.enlisterInterface();
+                        EnlisterInterface.SOwnerInterface(fName);
                         break;
                     }
                     else

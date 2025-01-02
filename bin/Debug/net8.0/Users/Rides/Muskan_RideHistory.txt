@@ -1,19 +1,12 @@
-Ride Date: 2/1/2025 3:11:23 ق.د.
-Customer's Name: ammad
-Pick-Up Location: karsaz
-Drop-Off Location: kamran
-Distance: 10 km
-Total Fare: Rs200
---------------------------------------------------
 Ride Date: 2/1/2025 5:35:10 ب.د.
-Customer's Name: Muskan
+Rider's Name: Zaighi
 Pick-Up Location: Bahria Uni
 Drop-Off Location: Baldia Town
 Distance: 30 km
 Total Fare: Rs600
 --------------------------------------------------
 Ride Date: 2/1/2025 5:36:15 ب.د.
-Customer's Name: Muskan
+Rider's Name: Zaighi
 Pick-Up Location: Bahria
 Drop-Off Location: Baldia
 Distance: 30 km

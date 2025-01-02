@@ -13,3 +13,18 @@
 /Users/m.zaighumkhan/Desktop/RiDelivery/RiDelivery/obj/Debug/net8.0/RiDelivery.genruntimeconfig.cache
 /Users/m.zaighumkhan/Desktop/RiDelivery/RiDelivery/obj/Debug/net8.0/ref/RiDelivery.dll
 /Users/m.zaighumkhan/Desktop/RiDelivery/RiDelivery/obj/Debug/net8.0/RiDelivery.sourcelink.json
+c:\Users\jawad\Desktop\CP Project\RiDelivery\bin\Debug\net8.0\RiDelivery.exe
+c:\Users\jawad\Desktop\CP Project\RiDelivery\bin\Debug\net8.0\RiDelivery.deps.json
+c:\Users\jawad\Desktop\CP Project\RiDelivery\bin\Debug\net8.0\RiDelivery.runtimeconfig.json
+c:\Users\jawad\Desktop\CP Project\RiDelivery\bin\Debug\net8.0\RiDelivery.dll
+c:\Users\jawad\Desktop\CP Project\RiDelivery\bin\Debug\net8.0\RiDelivery.pdb
+c:\Users\jawad\Desktop\CP Project\RiDelivery\obj\Debug\net8.0\RiDelivery.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\jawad\Desktop\CP Project\RiDelivery\obj\Debug\net8.0\RiDelivery.AssemblyInfoInputs.cache
+c:\Users\jawad\Desktop\CP Project\RiDelivery\obj\Debug\net8.0\RiDelivery.AssemblyInfo.cs
+c:\Users\jawad\Desktop\CP Project\RiDelivery\obj\Debug\net8.0\RiDelivery.csproj.CoreCompileInputs.cache
+c:\Users\jawad\Desktop\CP Project\RiDelivery\obj\Debug\net8.0\RiDelivery.sourcelink.json
+c:\Users\jawad\Desktop\CP Project\RiDelivery\obj\Debug\net8.0\RiDelivery.dll
+c:\Users\jawad\Desktop\CP Project\RiDelivery\obj\Debug\net8.0\refint\RiDelivery.dll
+c:\Users\jawad\Desktop\CP Project\RiDelivery\obj\Debug\net8.0\RiDelivery.pdb
+c:\Users\jawad\Desktop\CP Project\RiDelivery\obj\Debug\net8.0\RiDelivery.genruntimeconfig.cache
+c:\Users\jawad\Desktop\CP Project\RiDelivery\obj\Debug\net8.0\ref\RiDelivery.dll

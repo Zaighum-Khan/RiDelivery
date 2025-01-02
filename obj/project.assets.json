@@ -8,24 +8,26 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/m.zaighumkhan/.nuget/packages/": {}
+    "C:\\Users\\jawad\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/m.zaighumkhan/Desktop/RiDelivery/RiDelivery/RiDelivery.csproj",
+      "projectUniqueName": "C:\\Users\\jawad\\Desktop\\CP Project\\RiDelivery\\RiDelivery.csproj",
       "projectName": "RiDelivery",
-      "projectPath": "/Users/m.zaighumkhan/Desktop/RiDelivery/RiDelivery/RiDelivery.csproj",
-      "packagesPath": "/Users/m.zaighumkhan/.nuget/packages/",
-      "outputPath": "/Users/m.zaighumkhan/Desktop/RiDelivery/RiDelivery/obj/",
+      "projectPath": "C:\\Users\\jawad\\Desktop\\CP Project\\RiDelivery\\RiDelivery.csproj",
+      "packagesPath": "C:\\Users\\jawad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jawad\\Desktop\\CP Project\\RiDelivery\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/m.zaighumkhan/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\jawad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
